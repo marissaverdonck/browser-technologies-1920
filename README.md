@@ -12,6 +12,18 @@ Een van de mooiste principes van het web is dat het er echt is voor iedereen. Ie
 
 [Rubric](https://docs.google.com/spreadsheets/d/1MV3BWwwg_Zz1n-S_qOM4iSm4gA4M6g0xAxGacyaPuac/edit?usp=sharing)
 
+## Uitgewerkte opdrachten 
+
+### Week 1
+* [Opdracht 1.1 -  Breek het web](https://github.com/marissaverdonck/browser-technologies-1920/wiki/Opdracht-1---Onderzoek-2-features)
+
+* [Artikelen](https://github.com/marissaverdonck/browser-technologies-1920/wiki/Artikelen-week-1)
+
+* [Opdracht 1.2 - Fork je OBA](https://github.com/marissaverdonck/browser-technologies-1920/wiki/Opdracht-1.2)
+
+<img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76525127-93aba780-646b-11ea-97b6-e4d50393a2b3.png">
+
+
 ## Planning
 
 | Planning  | Woensdag  |  Donderdag | Vrijdag  |
