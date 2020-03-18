@@ -18,35 +18,35 @@
     <h1>Design your own Nerdy T-shirt</h1>
     <h2>Choose your favorite options</h2>
 
-    <form action="/my-handling-form-page" method="post">
+    <form method="post">
       <fieldset>
         <legend> Choose a color </legend>
 
-        <input type="radio" id="black" name="shirtColor" />
+        <input type="radio" id="black" name="shirtColor" value="black" checked/>
         <label for="black">Black</label>
-        <input type="radio" id="green" name="shirtColor" />
+        <input type="radio" id="green" name="shirtColor" value="green" />
         <label for="green">Green</label>
-        <input type="radio" id="blue" name="shirtColor" />
+        <input type="radio" id="blue" name="shirtColor" value="blue" />
         <label for="green">Blue</label>
-        <input type="radio" id="purle" name="shirtColor" />
+        <input type="radio" id="purle" name="shirtColor" value="radio" />
         <label for="green">Purple</label>
       </fieldset>
 
       <fieldset>
         <legend> Type your text (1 to 25 characters)</legend>
-        <input type="text" required minlength="1" maxlength="15" size="25">
+        <input type="text" id="text" name="text" required minlength="1" maxlength="15" size="25">
       </fieldset>
 
       <fieldset>
         <legend> Choose an image </legend>
-        <input type="radio" id="glasses" name="shirtImage" value="glasses" />
-        <label for="glasses"><img src="img/glasses.png"></label>
+        <input type="radio" id="glasses" name="shirtImage" value="glasses" checked />
+        <label for="glasses"><img src="img/glasses.png" alt="icon from glasses"></label>
         <input type="radio" id="science" name="shirtImage" value="science" />
-        <label for="science"><img src="img/science.png"></label>
+        <label for="science"><img src="img/science.png" alt="icon from science"></label>
         <input type="radio" id="code" name="shirtImage" value="code" />
-        <label for="code"><img src="img/code.png"></label>
+        <label for="code"><img src="img/code.png" alt="icon from code"></label>
         <input type="radio" id="github" name="shirtImage" value="github" />
-        <label for="github"><img src="img/github.png"></label>
+        <label for="github"><img src="img/github.png" alt="icon from github"></label>
       </fieldset>
 
       <input type="submit" value="Finish">
