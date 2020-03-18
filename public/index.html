@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Course name - Minor Web Development - CMD Amsterdam</title>
+
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <h1>Design your own Nerdy T-shirt</h1>
+    <h2>Choose your favorite options</h2>
+
+    <form action="/my-handling-form-page" method="post">
+      <fieldset>
+        <legend> Choose a color </legend>
+
+        <input type="radio" id="black" name="shirtColor" />
+        <label for="black">Black</label>
+        <input type="radio" id="green" name="shirtColor" />
+        <label for="green">Green</label>
+        <input type="radio" id="blue" name="shirtColor" />
+        <label for="green">Blue</label>
+        <input type="radio" id="purle" name="shirtColor" />
+        <label for="green">Purple</label>
+      </fieldset>
+
+      <fieldset>
+        <legend> Type your text (1 to 25 characters)</legend>
+        <input type="text" required minlength="1" maxlength="15" size="25">
+      </fieldset>
+
+      <fieldset>
+        <legend> Choose an image </legend>
+        <input type="radio" id="glasses" name="shirtImage" value="glasses" />
+        <label for="glasses"><img src="img/glasses.png"></label>
+        <input type="radio" id="science" name="shirtImage" value="science" />
+        <label for="science"><img src="img/science.png"></label>
+        <input type="radio" id="code" name="shirtImage" value="code" />
+        <label for="code"><img src="img/code.png"></label>
+        <input type="radio" id="github" name="shirtImage" value="github" />
+        <label for="github"><img src="img/github.png"></label>
+      </fieldset>
+
+      <input type="submit" value="Finish">
+
+
+    </form>
+
+  </main>
+</body>
+
+</html>
