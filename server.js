@@ -12,18 +12,17 @@ app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
 app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
-app.set('views', 'views');
+app.set('public', 'public');
 
 
-app.get('/', (req, res) => {})
+app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
+  res.render('design')
+  console.log(req.params.shirtColor)
+})
 
 app.post('/', (req, res) => {
-  console.log('Form ontvangen')
-
   console.log(req.body)
-
-
-  res.redirect('/design.html')
+  res.redirect('/design/' + req.body.shirtColor + '/' + req.body.text + '/' + req.body.shirtImage)
 });
 
 
