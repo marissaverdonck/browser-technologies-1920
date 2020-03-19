@@ -36,5 +36,5 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 
 
 app.listen(PORT, host, function() {
-  console.log(`Example app listening on port ${port}!`);
+  console.log(`Example app listening on port ${PORT}!`);
 });
