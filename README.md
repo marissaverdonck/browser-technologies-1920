@@ -1,32 +1,34 @@
 # Browser Technologies @cmda-minor-web 1920
 
-In the Browser Technologies course you will learn how to make good, robust, accessible websites. You will learn about Progressive Enhancement, Feature Detection and Fallback.
+The Browser Technologies course will learn you how to make good, robust, accessible websites. You will learn about Progressive Enhancement, Feature Detection and Fallback.
 
 ## Nerdy T-shirts
 
 <img width="359" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77111086-fe8a4f00-6a26-11ea-87a6-7789918e4762.png">
 
 ## Introduction
-Nerdy T-shirts is part of the course [cmda minor web - browser technologies](https://github.com/cmda-minor-web/browser-technologies-1920). It is a website where you can design your own T-shirt with color, text and images. The idea is that the website is accessible to all users with all kind of browsers. 
+Nerdy T-shirts is part of the course [cmda minor web - browser technologies](https://github.com/cmda-minor-web/browser-technologies-1920). You can design your own T-shirt with color, text and images. The idea is that the website is accessible to all users with all kind of browsers. 
 
 ## Table of Contents
-* Feature Research
-* Installation
-* Wishlist
-* Sources
-* License
+* [Feature research](#Feature-research)
+  * [Only HTML](#Only-HTML)
+  * [HTML CSS](#HTML-CSS)  
+  * [HTML CSS JS](#HTML-CSS-JS)    
+* [Installation](#Installation)
+* [Wishlist](#Wishlist)
+* [Sources](#Sources)
+* [License](#License)
 
 ## Feature Research
-[Opdracht 2 -  Progressive Enhanced Browser Technologie](https://github.com/marissaverdonck/browser-technologies-1920/wiki/Opdracht-2)
+[Wiki](https://github.com/marissaverdonck/browser-technologies-1920/wiki/Opdracht-2)
 
-I start thinking about the main functionality. This has to be accessible with only HTML. Step by step I enrich the user experience with CSS and JS.
+I start thinking about the main functionality. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
 
 ### Only HTML
 
 <img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962416-7c633300-691f-11ea-9294-9d4782256717.jpg">
 
-1. index.ejs gives a form where the user can choose a color, text and image.
-
+1. index.ejs gives a form where the user can choose a color, image and fill in a text.
 
 2. When the user clicks on submit, de values from the form be passed to the URL. This is done server side so that it also works when JS is not present.
 
@@ -67,7 +69,7 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 <img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962503-a4eb2d00-691f-11ea-8ad6-895707fbff99.jpg">
 
 ## Questions
-1. I change with EJS the color in the SVG that the user has chosen. That is inline-css. Is that allowed? 
+1. I change the color in the SVG with EJS that the user has chosen. That is inline-css. Is that allowed? 
 
 ```
 <rect id="color" class="cls-3" x="62.21" y="47.62" width="79.07" height="112.59" rx="13.03"  fill="<%=shirtColor%>";/>
