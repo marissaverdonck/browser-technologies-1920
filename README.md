@@ -27,6 +27,10 @@ I start with thinking about the main functionality: choose what your tshirt will
 
 <img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962416-7c633300-691f-11ea-9294-9d4782256717.jpg">
 
+<img width="620" alt="Schermafbeelding 2020-03-20 om 12 21 03" src="https://user-images.githubusercontent.com/43657951/77159273-510a5080-6aa5-11ea-8fb0-859223f9ac32.png">
+
+<img width="359" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77111086-fe8a4f00-6a26-11ea-87a6-7789918e4762.png">
+
 1. index.ejs gives a form where the user can choose a color, image and fill in a text.
 
 2. When the user clicks on the submit button from the form, de values will be passed to the URL. This is done server side so that it also works when JS is not present.
