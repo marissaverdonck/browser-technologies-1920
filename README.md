@@ -20,9 +20,8 @@ Nerdy T-shirts is part of the course [cmda minor web - browser technologies](htt
 * [License](#License)
 
 ## Feature Research
-[Wiki](https://github.com/marissaverdonck/browser-technologies-1920/wiki/Opdracht-2)
 
-I start thinking about the main functionality. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
+I start with thinking about the main functionality: choose what your tshirt will look like. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
 
 ### Only HTML
 
@@ -30,7 +29,7 @@ I start thinking about the main functionality. This has to be accessible with on
 
 1. index.ejs gives a form where the user can choose a color, image and fill in a text.
 
-2. When the user clicks on submit, de values from the form be passed to the URL. This is done server side so that it also works when JS is not present.
+2. When the user clicks on the submit button from the form, de values will be passed to the URL. This is done server side so that it also works when JS is not present.
 
 ```
 app.post('/', (req, res) => {
@@ -47,7 +46,7 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
   res.render('design', { shirtColor, shirtText, shirtImage })
 })
 ```
-4. In design.ejs a t-shirt SVH is shown. With the template engine: EJS I ensure that the color, image and text are adjusted to the input of the user. In this way, the user can also see his designed t-shirt without CSS and JS.
+4. In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure that the color, image and text are adjusted to the input of the user. In this way, the user can also see his designed t-shirt without CSS and JS.
 
 ```
 <svg id="shirt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 197.65 199.45">
