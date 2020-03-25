@@ -24,17 +24,12 @@ Nerdy T-shirts is part of the course [cmda minor web - browser technologies](htt
 I start with thinking about the main functionality: choose what your tshirt will look like. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
 
 ### Functional / Reliable (HTML)
-* The user can design an T-shirt
+* The user can design a T-shirt
   * The user can choose a color
   * The user can choose text
   * The user can choose a image
 * The user can see the result on a new page
 
-<img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962416-7c633300-691f-11ea-9294-9d4782256717.jpg">
-
-<img width="620" alt="Schermafbeelding 2020-03-20 om 12 21 03" src="https://user-images.githubusercontent.com/43657951/77159273-510a5080-6aa5-11ea-8fb0-859223f9ac32.png">
-
-<img width="359" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77111086-fe8a4f00-6a26-11ea-87a6-7789918e4762.png">
 
 <details>
   <summary>Code details</summary>
@@ -71,6 +66,13 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
     </svg>
 ```
 </details>
+
+<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962416-7c633300-691f-11ea-9294-9d4782256717.jpg">
+
+<img width="300" alt="Schermafbeelding 2020-03-20 om 12 21 03" src="https://user-images.githubusercontent.com/43657951/77159273-510a5080-6aa5-11ea-8fb0-859223f9ac32.png">
+
+<img width="300" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77111086-fe8a4f00-6a26-11ea-87a6-7789918e4762.png">
+
 
 ### Usable (HTML + CSS)
 * Styled website
