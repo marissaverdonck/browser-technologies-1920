@@ -4,7 +4,7 @@ The Browser Technologies course will learn you how to make good, robust, accessi
 
 ## Nerdy T-shirts
 
-<img width="359" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77111086-fe8a4f00-6a26-11ea-87a6-7789918e4762.png">
+<img width="300" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77111086-fe8a4f00-6a26-11ea-87a6-7789918e4762.png">
 
 ## Introduction
 Nerdy T-shirts is part of the course [cmda minor web - browser technologies](https://github.com/cmda-minor-web/browser-technologies-1920). You can design your own T-shirt with color, text and images. The idea is that the website is accessible to all users with all kind of browsers. 
@@ -69,9 +69,9 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962416-7c633300-691f-11ea-9294-9d4782256717.jpg">
 
-<img width="300" alt="Schermafbeelding 2020-03-20 om 12 21 03" src="https://user-images.githubusercontent.com/43657951/77159273-510a5080-6aa5-11ea-8fb0-859223f9ac32.png">
+<img width="500" alt="Schermafbeelding 2020-03-20 om 12 21 03" src="https://user-images.githubusercontent.com/43657951/77159273-510a5080-6aa5-11ea-8fb0-859223f9ac32.png">
 
-<img width="300" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77111086-fe8a4f00-6a26-11ea-87a6-7789918e4762.png">
+<img width="500" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77111086-fe8a4f00-6a26-11ea-87a6-7789918e4762.png">
 
 
 ### Usable (HTML + CSS)
@@ -79,14 +79,14 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 * The form is styled
   * Radio buttons are colors/images
 
-<img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962460-91d85d00-691f-11ea-861b-f420a4228d3f.jpg">
+<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962460-91d85d00-691f-11ea-861b-f420a4228d3f.jpg">
 
 ### Pleasurable (HTML + CSS + JS)
 * The user can see directly the input result on the same page.
 * T-shirt in 3D
 * Print the design with the print-button
 
-<img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962503-a4eb2d00-691f-11ea-8ad6-895707fbff99.jpg">
+<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962503-a4eb2d00-691f-11ea-8ad6-895707fbff99.jpg">
 
 ## Questions
 1. I change the color in the SVG with EJS that the user has chosen. That is inline-css. Is that allowed? 
