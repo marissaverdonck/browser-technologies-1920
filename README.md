@@ -24,6 +24,11 @@ Nerdy T-shirts is part of the course [cmda minor web - browser technologies](htt
 I start with thinking about the main functionality: choose what your tshirt will look like. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
 
 ### Functional / Reliable (HTML)
+* The user can design an T-shirt
+  * The user can choose a color
+  * The user can choose text
+  * The user can choose a image
+* The user can see the result on a new page
 
 <img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962416-7c633300-691f-11ea-9294-9d4782256717.jpg">
 
@@ -31,6 +36,9 @@ I start with thinking about the main functionality: choose what your tshirt will
 
 <img width="359" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77111086-fe8a4f00-6a26-11ea-87a6-7789918e4762.png">
 
+<details>
+  <summary>Code details</summary>
+ 
 1. index.ejs gives a form where the user can choose a color, image and fill in a text.
 
 2. When the user clicks on the submit button from the form, de values will be passed to the URL. This is done server side so that it also works when JS is not present.
@@ -62,12 +70,19 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
       <image id="image" transform="translate(73.13 71.53) scale(0.49)" xlink:href="/img/<%=shirtImage%>.png"/>
     </svg>
 ```
+</details>
 
 ### Usable (HTML + CSS)
+* Styled website
+* The form is styled
+  * Radio buttons are colors/images
 
 <img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962460-91d85d00-691f-11ea-861b-f420a4228d3f.jpg">
 
 ### Pleasurable (HTML + CSS + JS)
+* The user can see directly the input result on the same page.
+* T-shirt in 3D
+* Print the design with the print-button
 
 <img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962503-a4eb2d00-691f-11ea-8ad6-895707fbff99.jpg">
 
