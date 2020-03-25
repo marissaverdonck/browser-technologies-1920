@@ -23,7 +23,7 @@ Nerdy T-shirts is part of the course [cmda minor web - browser technologies](htt
 
 I start with thinking about the main functionality: choose what your tshirt will look like. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
 
-### Only HTML
+### Functional / Reliable (HTML)
 
 <img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962416-7c633300-691f-11ea-9294-9d4782256717.jpg">
 
@@ -63,11 +63,11 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
     </svg>
 ```
 
-### HTML + CSS
+### Usable (HTML + CSS)
 
 <img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962460-91d85d00-691f-11ea-861b-f420a4228d3f.jpg">
 
-### HTML + CSS + JS
+### Pleasurable (HTML + CSS + JS)
 
 <img width="542" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962503-a4eb2d00-691f-11ea-8ad6-895707fbff99.jpg">
 
