@@ -52,7 +52,7 @@ node server.js
 
 I start with thinking about the main functionality: choose what your tshirt will look like. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
 
-### Functional / Reliable (HTML)
+## 1. Functional / Reliable (HTML)
 * The user can design a T-shirt
   * The user can choose a color
   * The user can choose text
@@ -63,9 +63,13 @@ I start with thinking about the main functionality: choose what your tshirt will
 <details>
   <summary>Code details</summary>
  
-1. index.ejs gives a form where the user can choose a color, image and fill in a text.
+### 1. Form
 
-2. When the user clicks on the submit button from the form, de values will be passed to the URL. This is done server side so that it also works when JS is not present.
+index.ejs gives a form where the user can choose a color, image and fill in a text.
+
+### 2. Submit - server side
+
+When the user clicks on the submit button from the form, de values will be passed to the URL. This is done server side so that it also works when JS is not present.
 
 ```
 app.post('/', (req, res) => {
@@ -73,7 +77,8 @@ app.post('/', (req, res) => {
 })
 ```
 
-3. The values from the URL are retrieved and passed to design.ejs.
+### 3. URL parameters
+The values from the URL are retrieved and passed to design.ejs.
 ```
 app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
   const shirtColor = req.param('shirtColor')
@@ -82,9 +87,11 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
   res.render('design', { shirtColor, shirtText, shirtImage })
 })
 ```
-4. In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure that the color, image and text are adjusted to the input of the user. In this way, the user can also see his designed t-shirt without CSS and JS.
 
-**Problem:** This is inline CSS which is not very neat but for enhancement no problem. The only problem you can get, is that the HTML inline-CSS overlaps the CSS-file. Keep this in mind.
+### 4. SVG 
+In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure that the color, image and text are adjusted to the input of the user. In this way, the user can also see his designed t-shirt without CSS and JS.
+
+***Inline CSS:** This is inline CSS which is not very neat but for enhancement no problem. The only problem you can get, is that the HTML inline-CSS overlaps the CSS-file. Keep this in mind.
 
 ```
 <svg id="shirt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 197.65 199.45">
@@ -108,17 +115,21 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 
 
 
-### Usable (HTML + CSS)
+## 2. Usable (HTML + CSS)
 * Styled website
 * The form is styled
   * Radio buttons are colors/images
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962460-91d85d00-691f-11ea-861b-f420a4228d3f.jpg">
 
+
+
 <details>
    <summary>Code details</summary>
  
-1. Style the labels
+### 1. Form labels
+
+Style the labels
 
 Koop wrote me an issue to nest the input in a label for better [accessibility](https://24ways.org/2015/the-accessibility-mindset/). This wasn't easy because I want to style the label when the radiobutton is checked. If the label becomes a parent element, this will not be possilble anymore. That is why I choose to use a span element inside the label:     
 ```
@@ -128,10 +139,19 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 </label>
 ```
 
+### 1.2.Colorblindness
+
+To help people who can't see colors, I left the name of the color inside the button.
+
+<img width="300" alt="Schermafbeelding 2020-03-26 om 16 50 32" src="https://user-images.githubusercontent.com/43657951/77667161-237c4600-6f82-11ea-81ea-fcb30cfe7921.png">
+
+<img width="300" alt="Schermafbeelding 2020-03-26 om 16 50 53" src="https://user-images.githubusercontent.com/43657951/77667165-25460980-6f82-11ea-864f-deed73d42bcb.png">
+
+
 </details>
 
 
-### Pleasurable (HTML + CSS + JS)
+## 3. Pleasurable (HTML + CSS + JS)
 * The user can see directly the input result on the same page.
 * T-shirt in 3D
 * Print the design with the print-button
