@@ -55,7 +55,7 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 ```
 4. In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure that the color, image and text are adjusted to the input of the user. In this way, the user can also see his designed t-shirt without CSS and JS.
 
-Problem: This is inline CSS which is not very neat. For enhancement it is no problem. The only problem you can get, is that the HTML inline-CSS overlaps the CSS-file. Keep this in mind.
+**Problem:** This is inline CSS which is not very neat but for enhancement no problem. The only problem you can get, is that the HTML inline-CSS overlaps the CSS-file. Keep this in mind.
 
 ```
 <svg id="shirt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 197.65 199.45">
@@ -86,19 +86,27 @@ Problem: This is inline CSS which is not very neat. For enhancement it is no pro
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962460-91d85d00-691f-11ea-861b-f420a4228d3f.jpg">
 
+<details>
+   <summary>Code details</summary>
+ 
+1. Style the labels
+
+Koop wrote me an issue to nest the input in a label for better [accessibility](https://24ways.org/2015/the-accessibility-mindset/). This wasn't easy because I want to style the label when the radiobutton is checked. If the label becomes a parent element, this will not be possilble anymore. That is why I choose to use a span element inside the label:     
+```
+<label for="green"> 
+<input type="radio" id="darkseagreen" name="shirtColor" value="darkseagreen" />
+<span>Green</span>  
+</label>
+ 
+</details>
+
+
 ### Pleasurable (HTML + CSS + JS)
 * The user can see directly the input result on the same page.
 * T-shirt in 3D
 * Print the design with the print-button
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962503-a4eb2d00-691f-11ea-8ad6-895707fbff99.jpg">
-
-## Questions
-1. I change the color in the SVG with EJS that the user has chosen. That is inline-css. Is that allowed? 
-
-```
-<rect id="color" class="cls-3" x="62.21" y="47.62" width="79.07" height="112.59" rx="13.03"  fill="<%=shirtColor%>";/>
-```
 
 
 ## Installation
