@@ -10,14 +10,43 @@ The Browser Technologies course will learn you how to make good, robust, accessi
 Nerdy T-shirts is part of the course [cmda minor web - browser technologies](https://github.com/cmda-minor-web/browser-technologies-1920). You can design your own T-shirt with color, text and images. The idea is that the website is accessible to all users with all kind of browsers. 
 
 ## Table of Contents
+* [Installation](#Installation)
 * [Feature research](#Feature-research)
   * [Only HTML](#Only-HTML)
   * [HTML CSS](#HTML-CSS)  
   * [HTML CSS JS](#HTML-CSS-JS)    
-* [Installation](#Installation)
 * [Wishlist](#Wishlist)
 * [Sources](#Sources)
 * [License](#License)
+
+
+## Installation
+
+1. Open your terminal
+
+2. Change the directory to a folder in which you want to place the files
+
+``` 
+cd /~path
+```
+
+3. Clone the repository 
+```
+git clone https://github.com/marissaverdonck/browser-technologies-1920
+```
+4. Change directory to repository
+```
+cd browser-technologies-1920
+```
+5. Install dependencies from package.json
+```
+npm install
+```
+6. Run application with Node
+```
+node server.js
+```
+
 
 ## Feature Research
 
@@ -97,7 +126,8 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 <input type="radio" id="darkseagreen" name="shirtColor" value="darkseagreen" />
 <span>Green</span>  
 </label>
- 
+```
+
 </details>
 
 
@@ -109,32 +139,6 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962503-a4eb2d00-691f-11ea-8ad6-895707fbff99.jpg">
 
 
-## Installation
-
-1. Open your terminal
-
-2. Change the directory to a folder in which you want to place the files
-
-``` 
-cd /~path
-```
-
-3. Clone the repository 
-```
-git clone https://github.com/marissaverdonck/browser-technologies-1920
-```
-4. Change directory to repository
-```
-cd browser-technologies-1920
-```
-5. Install dependencies from package.json
-```
-npm install
-```
-6. Run application with Node
-```
-node server.js
-```
 
 ## Wishlist
 
