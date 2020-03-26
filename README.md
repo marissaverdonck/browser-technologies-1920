@@ -55,6 +55,8 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 ```
 4. In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure that the color, image and text are adjusted to the input of the user. In this way, the user can also see his designed t-shirt without CSS and JS.
 
+Problem: This is inline CSS which is not very neat. For enhancement it is no problem. The only problem you can get, is that the HTML inline-CSS overlaps the CSS-file. Keep this in mind.
+
 ```
 <svg id="shirt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 197.65 199.45">
       <title>Your Nerdy Shirt</title>
