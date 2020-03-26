@@ -14,15 +14,19 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 app.get('/', (req, res) => {
-  console.log(req.query.name)
+  // const shirtColor = req.params.shirtColor
+  // const shirtText = req.params.text
+  // const shirtImage = req.params.shirtImage
+  // console.log(req.query)
   res.render('index')
 })
 app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
-  const shirtColor = req.param('shirtColor')
-  const shirtText = req.param('text')
-  const shirtImage = req.param('shirtImage')
+  const shirtColor = req.params.shirtColor
+  const shirtText = req.params.text
+  const shirtImage = req.params.shirtImage
   res.render('design', { shirtColor, shirtText, shirtImage })
 })
+
 app.post('/', (req, res) => {
   res.redirect('/design/' + req.body.shirtColor + '/' + req.body.text + '/' + req.body.shirtImage)
 })
