@@ -71,9 +71,9 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962416-7c633300-691f-11ea-9294-9d4782256717.jpg">
 
-<img width="500" alt="Schermafbeelding 2020-03-20 om 12 21 03" src="https://user-images.githubusercontent.com/43657951/77533568-68777e00-6e97-11ea-9e6d-bf5cb3d5e3f5.png">
+<img width="500" alt="Schermafbeelding 2020-03-20 om 12 21 03" src="https://user-images.githubusercontent.com/43657951/77654288-2c185080-6f71-11ea-8c37-386ba4134596.png">
 
-<img width="500" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77533575-6a414180-6e97-11ea-8e95-b21b086e6bfe.png">
+<img width="500" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77654298-2fabd780-6f71-11ea-9fae-747b1b9a8334.png">
 
 
 
