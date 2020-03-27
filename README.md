@@ -111,10 +111,6 @@ In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure tha
 
 <img width="500" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77654298-2fabd780-6f71-11ea-9fae-747b1b9a8334.png">
 
-
-
-
-
 ## 2. Usable (HTML + CSS)
 * Styled website
 * The form is styled
