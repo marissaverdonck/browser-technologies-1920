@@ -12,9 +12,9 @@ Nerdy T-shirts is part of the course [cmda minor web - browser technologies](htt
 ## Table of Contents
 * [Installation](#Installation)
 * [Progressive enhancement](#Progressive-enhancement)
-  * [Functional / Reliable (HTML)](#Functional-/-Reliable-(HTML))
-  * [Usable (HTML + CSS)](#Usable-(HTML + CSS))  
-  * [Pleasurable (HTML + CSS + JS)](#Pleasurable-(HTML-+-CSS-+-JS))   
+  * [Functional / Reliable (HTML)]()
+  * [Usable (HTML + CSS)]()  
+  * [Pleasurable (HTML + CSS + JS)]()   
 * [Wishlist](#Wishlist)
 * [Sources](#Sources)
 * [License](#License)
