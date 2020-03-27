@@ -28,7 +28,7 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-  res.redirect('/design/' + req.body.shirtColor + '/' + req.body.text + '/' + req.body.shirtImage)
+  res.redirect('design/' + req.body.shirtColor + '/' + req.body.text + '/' + req.body.shirtImage)
 })
 
 app.listen(PORT, host, function() {
