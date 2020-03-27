@@ -146,7 +146,7 @@ To help people who can't see colors, I left the name of the color inside the but
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77767508-79fc8980-7041-11ea-82d3-81caf5271483.png">
 
-<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77767519-7d901080-7041-11ea-8539-31bdaafc5bae.png">
+<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77767779-d65fa900-7041-11ea-98df-565e24c83254.png">
 
 
 
