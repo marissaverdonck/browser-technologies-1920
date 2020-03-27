@@ -19,7 +19,7 @@
   </header>
   <main>
 
-    <h1>Your Nerdy Shirt:</h1>
+
 
 
     <section id="result">
@@ -31,28 +31,31 @@
       <rect id="color" class="cls-3" x="59.21" y="47.62" width="79.07" height="112.59" rx="13.03"  fill= " <%=shirtColor%> ";/>
       <text id="text" class="cls-4" font-size= "10px" fill= "black" font-family= "Courier"  x="50%" y="57%"dominant-baseline="middle" text-anchor="middle"><%=shirtText%></text>
       <image id="image" transform="translate(72.13 65.53) scale(0.12)" xlink:href="/img/<%=shirtImage%>.png"/>
-        <g class="cls-10"><image width="820" height="621" transform="translate(117.43 180.84) scale(0.09 0.09)" xlink:href="/img/shoes.png"></image></g>
+        <!-- <g class="cls-10"><image width="820" height="621" transform="translate(117.43 180.84) scale(0.09 0.09)" xlink:href="/img/shoes.png"></image></g> -->
     </svg>
+
+
+      <article id="resultText">
+        <p>Color:
+          <%=shirtColor%>
+        </p>
+        <p>Image:
+          <%=shirtImage%>
+        </p>
+        <p>Text:
+          <%=shirtText%>
+        </p>
+        <a href="javascript:window.print()"><button>Print</button></a>
+      </article>
+
     </section>
 
 
-    <p>Color:
-      <%=shirtColor%>
-    </p>
-    <p>Image:
-      <%=shirtImage%>
-    </p>
-    <p>Text:
-      <%=shirtText%>
-    </p>
 
 
 
 
 
-
-
-    <a href="javascript:window.print()"><button>Print</button></a>
   </main>
 </body>
 
