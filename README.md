@@ -11,10 +11,10 @@ Nerdy T-shirts is part of the course [cmda minor web - browser technologies](htt
 
 ## Table of Contents
 * [Installation](#Installation)
-* [Feature research](#Feature-research)
-  * [Only HTML](#Only-HTML)
-  * [HTML CSS](#HTML-CSS)  
-  * [HTML CSS JS](#HTML-CSS-JS)    
+* [Progressive enhancement](#Progressive-enhancement)
+  * [Functional / Reliable (HTML)](#Functional-/-Reliable-(HTML))
+  * [Usable (HTML + CSS)](#Usable-(HTML + CSS))  
+  * [Pleasurable (HTML + CSS + JS)](#Pleasurable-(HTML-+-CSS-+-JS)    
 * [Wishlist](#Wishlist)
 * [Sources](#Sources)
 * [License](#License)
@@ -48,7 +48,7 @@ node server.js
 ```
 
 
-## Feature Research
+## Progressive enhancement
 
 I start with thinking about the main functionality: choose what your tshirt will look like. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
 
