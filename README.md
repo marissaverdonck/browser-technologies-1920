@@ -144,9 +144,11 @@ To help people who can't see colors, I left the name of the color inside the but
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962460-91d85d00-691f-11ea-861b-f420a4228d3f.jpg">
 
-<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77766408-e5ddf280-703f-11ea-938b-5655129fbbcd.png">
+<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77767508-79fc8980-7041-11ea-82d3-81caf5271483.png">
 
-<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77766418-e8d8e300-703f-11ea-809b-e8cccb07e93f.png">
+<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77767519-7d901080-7041-11ea-8539-31bdaafc5bae.png">
+
+
 
 ## 3. Pleasurable (HTML + CSS + JS)
 * The user can see directly the input result on the same page.
