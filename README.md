@@ -79,7 +79,7 @@ With feature detection you can check if a browser supports a certain block of co
 <details>
   <summary>Code details</summary>
  
-1. Form
+### 1. Form
 
 index.ejs gives a form where the user can choose a color, image and fill in a text.
 
@@ -92,7 +92,7 @@ For color use, [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/
    </label>
 ```
 
-2. Submit - server side
+### 2. Submit - server side
 
 When the user clicks on the submit button from the form, de values will be passed to the URL. This is done server side so that it also works when JS is not present.
 
@@ -102,7 +102,7 @@ app.post('/', (req, res) => {
 })
 ```
 
-3. URL parameters
+### 3. URL parameters
 The values from the URL are retrieved and passed to design.ejs.
 ```
 app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
@@ -113,7 +113,7 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 })
 ```
 
-4. SVG 
+### 4. SVG 
 In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure that the color, image and text are adjusted to the input of the user. In this way, the user can also see his designed t-shirt without CSS and JS.
 
 ***Inline CSS:** This is inline CSS which is not very neat but for enhancement no problem. The only problem you can get, is that the HTML inline-CSS overlaps the CSS-file. Keep this in mind.
@@ -150,7 +150,7 @@ In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure tha
 
    <summary>Code details</summary>
  
-1. Form labels
+### 1. Form labels
 
 Style the labels
 
@@ -162,7 +162,7 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 </label>
 ```
 
-2. Colorblindness
+### 2. Colorblindness
 
 To help people who can't see colors, I left the name of the color inside the button.
 
@@ -198,7 +198,7 @@ To help people who can't see colors, I left the name of the color inside the but
 
    <summary>Code details</summary>
 
-1. See directly the result
+### 1. See directly the result
 
 XMLHttpRequest is a JS object that retrieves data from a URL/other HTML-page without having to do a full page refresh. On this way I can show the result directly next to the form. There is a fallback if the browser don't support XMLHttpRequest.
 
@@ -221,7 +221,7 @@ Source: [Developer.mozilla, XML Http requst](https://developer.mozilla.org/nl/do
 }
  ```
 
-2. Changes in form
+### 2. Changes in form
 
 When the user changes something in the form,  a function is called.
 
@@ -246,12 +246,14 @@ let newcurrentTextColor = currentTextColor.replace(currentTextColor, event.targe
 currentTextColorSelector.textContent = "Color: " + newcurrentTextColor;
 ```
 
-4. InnerHTML/textContent
+### 3. InnerHTML/textContent
 
 I'll use textContent because it is supported by more browsers.
 
 Source: [Can I use, InnerHTML/textContent ](https://caniuse.com/#search=insertAdjacentHTML)
+
 <img width="500" alt="Schermafbeelding 2020-03-31 om 09 57 54" src="https://user-images.githubusercontent.com/43657951/78024891-67dc5d00-7359-11ea-8cb0-d3f45af08df4.png">
+
 <img width="500" alt="Schermafbeelding 2020-03-31 om 09 58 17" src="https://user-images.githubusercontent.com/43657951/78024899-6ad74d80-7359-11ea-92e6-89f80bf3ec04.png">
 
 
@@ -262,24 +264,24 @@ Source: [Can I use, InnerHTML/textContent ](https://caniuse.com/#search=insertAd
 ## Test
 The website is tested on several browsers/ devices. I used [Browserstack](https://www.browserstack.com/)for testing different devices and I've installed Chrome, Safari and Firefox on my Macbook Pro. The only problem I found was that .remove() did not work on all the browsers.
 
-1. Chrome
+### 1. Chrome
 * No Problems
 
-2. Safari
+### 2. Safari
 * The "Finish button" in the form is not removed. 
 <img width="300" alt="Schermafbeelding 2020-03-31 om 13 55 25" src="https://user-images.githubusercontent.com/43657951/78023700-690c8a80-7357-11ea-9e99-0f9d69515915.png">
 
-3. Firefox
+### 3. Firefox
 * No Problems
 
-5. Motorola Moto G 2nd Gen, Android, v5. Browser: UC
+### 5. Motorola Moto G 2nd Gen, Android, v5. Browser: UC
 * No Problems
 
-6. Nokia Lumia 930 8.1
+### 6. Nokia Lumia 930 8.1
 * The "Finish button" in the form is not removed. 
 <img width="300" alt="Schermafbeelding 2020-03-31 om 13 45 23" src="https://user-images.githubusercontent.com/43657951/78023504-0ca96b00-7357-11ea-9c55-4620512fd362.png">
 
-7. Windows 10, Microsoft Edge 15
+### 7. Windows 10, Microsoft Edge 15
 * No Problems
 
 ## Sources
@@ -289,6 +291,9 @@ The website is tested on several browsers/ devices. I used [Browserstack](https:
 * [Developer.mozilla, XML Http requst](https://developer.mozilla.org/nl/docs/Web/API/XMLHttpRequest)
 * [Can I use](https://caniuse.com)
 * [Browserstack](https://www.browserstack.com/)
+
+## Conclusie
+
 
 ## License
 MIT License
