@@ -17,65 +17,68 @@
   </header>
   <main>
     <h1>Design your own Nerdy T-shirt</h1>
-    <form method="post">
-      <h2>Choose your favorite options</h2>
-      <fieldset>
-        <legend> Pick a color: </legend>
+    <section id="input">
 
-        <label for="gold"> 
+      <form method="post">
+        <h2>Choose your favorite options</h2>
+        <fieldset>
+          <legend> Pick a color: </legend>
+
+          <label for="gold"> 
         <input type="radio" id="gold" name="shirtColor" value="gold" checked/>
         <span>Gold</span>
        </label>
 
-        <label for="powderblue"> 
+          <label for="powderblue"> 
         <input type="radio" id="powderblue" name="shirtColor" value="powderblue" />
     <span> Powder Blue</span>
    </label>
-        <label for="Plum"> 
-        <input type="radio" id="plum" name="shirtColor" value="Plum" />
+          <label for="plum"> 
+        <input type="radio" id="plum" name="shirtColor" value="plum" />
         <span> Plum</span>  
       </label>
-        <label for="darkseagreen"> 
+          <label for="darkseagreen"> 
         <input type="radio" id="darkseagreen" name="shirtColor" value="darkseagreen" />
         <span> Dark sea green</span>  
      </label>
-      </fieldset>
+        </fieldset>
 
-      <fieldset>
-        <legend> Fill in your text (1 to 15 characters):</legend>
-        <input type="text" id="text" name="text" required minlength="1" maxlength="15" size="25" placeholder="Get Nerdy!">
-      </fieldset>
+        <fieldset>
+          <legend> Fill in your text (1 to 15 characters):</legend>
+          <input type="text" id="text" name="text" required minlength="1" maxlength="15" size="25" placeholder="Get Nerdy!">
+        </fieldset>
 
-      <fieldset>
-        <legend> Choose an image: </legend>
+        <fieldset>
+          <legend> Choose an image: </legend>
 
-        <label for="glasses">
+          <label for="glasses">
         <input type="radio" id="glasses" name="shirtImage" value="glasses" checked />
       <img src="img/glasses.png" alt="icon from glasses">
     </label>
-        <label for="science">
+          <label for="science">
         <input type="radio" id="science" name="shirtImage" value="science" />
        <img src="img/science.png" alt="icon from science">
     </label>
-        <label for="code">
+          <label for="code">
         <input type="radio" id="code" name="shirtImage" value="code" />
         <img src="img/code.png" alt="icon from code">
       </label>
-        <label for="github">
+          <label for="github">
         <input type="radio" id="github" name="shirtImage" value="github" />
         <img src="img/github.png" alt="icon from github">
        
         </label>
-      </fieldset>
+        </fieldset>
 
-      <input type="submit" value="Finish">
-    </form>
+        <input type="submit" value="Finish">
+      </form>
 
-
+    </section>
 
 
 
   </main>
+  <script type="text/javascript" src="script/index.js"></script>
 </body>
 
 </html>

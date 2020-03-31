@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="../../stylesheets/coloringpage.css" type="text/css" media="screen, projection" />
-  <link rel="stylesheet" href="../../stylesheets/coloringpageprint.css" type="text/css" media="print" />
+  <!-- <link rel="stylesheet" href="../../stylesheets/coloringpage.css" type="text/css" media="screen, projection" /> -->
+  <!-- <link rel="stylesheet" href="../../stylesheets/coloringpageprint.css" type="text/css" media="print" /> -->
   <title>Course name - Minor Web Development - CMD Amsterdam</title>
 </head>
 
@@ -27,35 +27,28 @@
       <title>Your Nerdy Shirt</title>
       <path id="basic" class="cls-1" d="M323,265.12l37.46-47.72,4-2.68,29-11.15,5.9-4.46c6,6.27,11.69,7.87,14.41,8.37a43,43,0,0,0,9.06.38c4.28-.1,7.39-.18,10.77-1.13a26.75,26.75,0,0,0,12.1-7.62l4.83,4.46,28.55,10.26,5.35,2.67L519.28,270l-31.67,21.85-9.36-10.26,3.12,112a469.67,469.67,0,0,1-60.22,3.57,468,468,0,0,1-58.87-4l1.34-115.07q-4,5.34-8,10.7Z" fill="white" stroke="lightgrey" stroke-miterlimit= "10" transform="translate(-322.31 -198.21)"/>
       <path id="collar" class="cls-2" d="M393.52,203.57l5.9-4.46a24.29,24.29,0,0,0,8.85,13.06,23.72,23.72,0,0,0,12.88,4.64,24.32,24.32,0,0,0,15.77-5.06,25.46,25.46,0,0,0,8.84-12.64l4.83,4.46a28.94,28.94,0,0,1-9,13.24c-8.17,6.67-17.42,6.44-20.4,6.32a30.33,30.33,0,0,1-27.63-19.56Z" fill="white" stroke="lightgrey" stroke-miterlimit= "10" transform="translate(-322.31 -198.21)"/>
-      <rect id="color" class="cls-3" x="59.21" y="47.62" width="79.07" height="112.59" rx="13.03"  fill= " <%=shirtColor%> ";/>
-      <text id="text" class="cls-4" font-size= "10px" fill= "black" font-family= "Courier"  x="50%" y="57%"dominant-baseline="middle" text-anchor="middle"><%=shirtText%></text>
-      <image id="image" transform="translate(72.13 65.53) scale(0.12)" xlink:href="/img/<%=shirtImage%>.png"/>
+      <rect id="SVGcolor" class="cls-3" x="59.21" y="47.62" width="79.07" height="112.59" rx="13.03"  fill= "<%=shirtColor%>";/>
+      <text id="SVGtext" class="cls-4" font-size= "10px" fill= "black" font-family= "Courier"  x="50%" y="57%"dominant-baseline="middle" text-anchor="middle"><%=shirtText%></text>
+      <image id="SVGimage" transform="translate(72.13 65.53) scale(0.12)" height= "447px" width= "451px" xlink:href="/img/<%=shirtImage%>.png" image/>
         <!-- <g class="cls-10"><image width="820" height="621" transform="translate(117.43 180.84) scale(0.09 0.09)" xlink:href="/img/shoes.png"></image></g> -->
     </svg>
 
-
       <article id="resultText">
-        <p>Color:
+        <p id="textColor">Color:
           <%=shirtColor%>
         </p>
-        <p>Image:
-          <%=shirtImage%>
-        </p>
-        <p>Text:
+        <p id="textText">Text:
           <%=shirtText%>
         </p>
-        <a href="javascript:window.print()"><button>Print</button></a>
-      </article>
+        <p id="textImage">Image:
+          <%=shirtImage%>
+        </p>
 
+      </article>
     </section>
 
-
-
-
-
-
-
   </main>
+  <script type="text/javascript" src="/script/design.js"></script>
 </body>
 
 </html>
