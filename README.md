@@ -4,7 +4,7 @@ The Browser Technologies course will learn you how to make good, robust, accessi
 
 ## Nerdy T-shirts
 
-<img width="300" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77111086-fe8a4f00-6a26-11ea-87a6-7789918e4762.png">
+<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78012418-36f22d00-7345-11ea-81bf-e5a02294647a.png">
 
 ## Introduction
 Nerdy T-shirts is part of the course [cmda minor web - browser technologies](https://github.com/cmda-minor-web/browser-technologies-1920). You can design your own T-shirt with color, text and images. The idea is that the website is accessible to all users with all kind of browsers. 
@@ -105,7 +105,7 @@ In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure tha
 ```
 </details>
 
-<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962416-7c633300-691f-11ea-9294-9d4782256717.jpg">
+<img width="400" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78015049-175d0380-7349-11ea-8e0c-adead8022836.jpg">
 
 <img width="500" alt="Schermafbeelding 2020-03-20 om 12 21 03" src="https://user-images.githubusercontent.com/43657951/77654288-2c185080-6f71-11ea-8c37-386ba4134596.png">
 
@@ -142,7 +142,7 @@ To help people who can't see colors, I left the name of the color inside the but
 
 </details>
 
-<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962460-91d85d00-691f-11ea-861b-f420a4228d3f.jpg">
+<img width="400" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78015053-1926c700-7349-11ea-8fb1-41343a69840a.jpg">
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77767508-79fc8980-7041-11ea-82d3-81caf5271483.png">
 
@@ -155,7 +155,7 @@ To help people who can't see colors, I left the name of the color inside the but
 * T-shirt in 3D
 * Print the design with the print-button
 
-<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962503-a4eb2d00-691f-11ea-8ad6-895707fbff99.jpg">
+<img width="250" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78016145-b3d3d580-734a-11ea-8c7c-488cb8687223.jpg">
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78012418-36f22d00-7345-11ea-81bf-e5a02294647a.png">
 
