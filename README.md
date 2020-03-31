@@ -313,6 +313,7 @@ The website is tested on several browsers/ devices. I used [Browserstack](https:
 * [Browserstack](https://www.browserstack.com/)
 
 ## Conclusion
+[See here the comprehensive conclusion](https://github.com/marissaverdonck/browser-technologies-1920/wiki/Conclusie)
 * I learned that a website should be accessible to all users on all devices.
 * I learned what progressive enhancement is and how you can apply it when creating a website.
 * The core functionality is usable in the HTML and CSS and JS provide extra features.
