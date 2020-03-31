@@ -259,6 +259,19 @@ Source: [Can I use, InnerHTML/textContent ](https://caniuse.com/#search=insertAd
 
 <img width="500" alt="Schermafbeelding 2020-03-31 om 09 58 17" src="https://user-images.githubusercontent.com/43657951/78024899-6ad74d80-7359-11ea-92e6-89f80bf3ec04.png">
 
+### 4. Remove()
+The submit button from the form navigates to the old URL so it has to be removed.
+
+I use the fallback .style.opacity = "0" if .remove() is not supported by the browser.
+
+```
+function deleteSubmitButton() {
+  const submitButton = document.querySelector("#submit");
+  submitButton.remove()
+  submitButton.style.opacity = "0";
+}
+```
+
 
 </details>
 

@@ -105,8 +105,9 @@ function addPrintButton() {
 }
 
 function deleteSubmitButton() {
-  const submitButton = document.querySelector("input[type=submit");
+  const submitButton = document.querySelector("#submit");
   submitButton.remove()
+  submitButton.style.opacity = "0";
 }
 
 function changeFormMethod() {
