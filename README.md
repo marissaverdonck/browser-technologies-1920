@@ -313,9 +313,10 @@ The form images have an alt text in the form. But this is not yet in the svg res
 
 <img width="500" alt="Schermafbeelding 2020-03-31 om 23 10 32" src="https://user-images.githubusercontent.com/43657951/78075457-dabef580-73a4-11ea-9f49-edd17d0381a3.png">
 
-
 ### 10 Accessibility test: 3. No mouse
-It is possible to move over all the form inputs and the print button. Except the link in the header. This link navigates to the same page so I think this is the reason Because the link in the header of the design page still works.
+It is possible to move over all the form inputs and the print button. Except the link in the header. This link navigates to the same page so I think this is the reason because the link in the header of the design page still works.
+
+<img width="500" alt="Schermafbeelding 2020-03-31 om 23 20 45" src="https://user-images.githubusercontent.com/43657951/78076207-46559280-73a6-11ea-923b-4d78bc16f4f7.png">
 
 ## Sources
 * [Developer.mozilla, Color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
