@@ -157,6 +157,8 @@ To help people who can't see colors, I left the name of the color inside the but
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/76962503-a4eb2d00-691f-11ea-8ad6-895707fbff99.jpg">
 
+<img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78012418-36f22d00-7345-11ea-81bf-e5a02294647a.png">
+
 
 
 ## Wishlist
