@@ -108,6 +108,7 @@ function deleteSubmitButton() {
   const submitButton = document.querySelector("#submit");
   submitButton.remove()
   submitButton.style.opacity = "0";
+  submitButton.style.filter = "alpha(opacity=0)";
 }
 
 function changeFormMethod() {
