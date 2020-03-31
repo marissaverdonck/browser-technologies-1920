@@ -280,29 +280,42 @@ function deleteSubmitButton() {
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78012418-36f22d00-7345-11ea-81bf-e5a02294647a.png">
 
-## Test
+## Testing
 The website is tested on several browsers/ devices. I used [Browserstack](https://www.browserstack.com/)for testing different devices and I've installed Chrome, Safari and Firefox on my Macbook Pro. The only problem I found was that .remove() did not work on all the browsers.
 
-### 1. Chrome
+### 1. Browser test: Chrome
 * No Problems
 
-### 2. Safari
+### 2. Browser test: Safari
 * No Problems
 
-### 3. Firefox
+### 3.  Browser test: Firefox
 * No Problems
 
-### 5. Motorola Moto G 2nd Gen, Android, v5. Browser: UC
+### 5. Device test: Motorola Moto G 2nd Gen, Android, v5. Browser: UC
 * No Problems
 
-### 6. Nokia Lumia 930 8.1
+### 6. Device test: Nokia Lumia 930 8.1
 * There is no basic style and the submit button is still there. Fortunately, when the user changes the form, the shirt changes. So it is not a big issue. But something to look at when I have more time.
 
 <img width="373" alt="Schermafbeelding 2020-03-31 om 15 25 22" src="https://user-images.githubusercontent.com/43657951/78031888-74b27e00-7364-11ea-9558-d0923093054d.png">
 
-### 7. Windows 10, Microsoft Edge 15
+### 7. Device test: Windows 10, Microsoft Edge 15
 * No Problems
 
+### 8 Accessibility test: Color blindness
+Because there is text in the color buttons, Color blindness should not be a problem.
+<img width="500" alt="Schermafbeelding 2020-03-31 om 23 07 32" src="https://user-images.githubusercontent.com/43657951/78075223-6d12c980-73a4-11ea-80d6-d2dd8a243cb9.png">
+
+
+### 9 Accessibility test: Turn off Images
+The form images have an alt text in the form. But this is not yet in the svg result. This can be a problem so I have to add an alt-text here.
+
+<img width="500" alt="Schermafbeelding 2020-03-31 om 23 10 32" src="https://user-images.githubusercontent.com/43657951/78075457-dabef580-73a4-11ea-9f49-edd17d0381a3.png">
+
+
+### 10 Accessibility test: 3. No mouse
+It is possible to move over all the form inputs and the print button. Except the link in the header. This link navigates to the same page so I think this is the reason Because the link in the header of the design page still works.
 
 ## Sources
 * [Developer.mozilla, Color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
