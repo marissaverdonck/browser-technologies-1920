@@ -130,6 +130,7 @@ In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure tha
 ```
 </details>
 
+### Screenshot
 
 <img width="500" alt="Schermafbeelding 2020-03-20 om 12 21 03" src="https://user-images.githubusercontent.com/43657951/77654288-2c185080-6f71-11ea-8c37-386ba4134596.png">
 
@@ -174,6 +175,8 @@ To help people who can't see colors, I left the name of the color inside the but
 
 
 </details>
+
+### Screenshot
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77767508-79fc8980-7041-11ea-82d3-81caf5271483.png">
 
@@ -258,6 +261,8 @@ Source: [Can I use, InnerHTML/textContent ](https://caniuse.com/#search=insertAd
 
 
 </details>
+
+### Screenshot
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78012418-36f22d00-7345-11ea-81bf-e5a02294647a.png">
 
