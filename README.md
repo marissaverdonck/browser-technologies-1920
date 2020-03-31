@@ -54,7 +54,7 @@ Progressive enhancement is a strategy that first emphasizes the important conten
 An example from the Nerdy Tshirt site: with HTML you can choose your design options and see the result on a new page. With CSS I give the design options and the result a styling. For example, if the user clicks on a color option, the button becomes thicker. If the browser supports JS, the user can see his design options directly on the same page.
 
 ### Code funtionality
-I start with thinking about the core functionality: the user design a tshirt. He/She can choose how the T-shirt will look like. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
+I start with thinking about the core functionality: the user can choose how the design on the T-shirt will look like. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
 
 ### Feature detection
 With feature detection you can check if a browser supports a certain block of code. If it doesn't support the code, you can use "fallbacks". A fallback let the browser run different code, so that the browser can always provide a working experience rather than crashing/erroring in some browsers.
@@ -72,20 +72,6 @@ With feature detection you can check if a browser supports a certain block of co
 <img width="400" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78015049-175d0380-7349-11ea-8e0c-adead8022836.jpg">
 
 </details>
-<details>
-  <summary>Research</summary>
-
-1. [developer.mozilla, color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
-Recommendation developer mozilla: Adds the orange keyword and system colors.
-```
- <label for="powderblue"> 
-        <input type="radio" id="powderblue" name="shirtColor" value="powderblue" />
-    <span> Blue</span>
-   </label>
-```
-
-2. [Developer.mozilla, XML Http requst](https://developer.mozilla.org/nl/docs/Web/API/XMLHttpRequest)
-XMLHttpRequest is a JS object that retrieves data from a URL/other HTML-page without having to do a full page refresh.
 
 
 </details>
@@ -96,6 +82,15 @@ XMLHttpRequest is a JS object that retrieves data from a URL/other HTML-page wit
 1. Form
 
 index.ejs gives a form where the user can choose a color, image and fill in a text.
+
+For color use, [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) recommend to use the color names like orange.
+
+```
+ <label for="powderblue"> 
+        <input type="radio" id="powderblue" name="shirtColor" value="powderblue" />
+    <span> Blue</span>
+   </label>
+```
 
 2. Submit - server side
 
@@ -150,18 +145,6 @@ In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure tha
 <img width="400" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78015053-1926c700-7349-11ea-8fb1-41343a69840a.jpg">
 </details>
 
-<details>
-   <summary>Research</summary>
-
-1. Colorblindness
-
-To help people who can't see colors, I left the name of the color inside the button.
-
-<img width="300" alt="Schermafbeelding 2020-03-26 om 16 50 32" src="https://user-images.githubusercontent.com/43657951/77667161-237c4600-6f82-11ea-81ea-fcb30cfe7921.png">
-
-<img width="300" alt="Schermafbeelding 2020-03-26 om 16 50 53" src="https://user-images.githubusercontent.com/43657951/77667165-25460980-6f82-11ea-864f-deed73d42bcb.png">
-
-</details>
 
 <details>
 
@@ -179,6 +162,16 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 </label>
 ```
 
+2. Colorblindness
+
+To help people who can't see colors, I left the name of the color inside the button.
+
+<img width="300" alt="Schermafbeelding 2020-03-26 om 16 50 32" src="https://user-images.githubusercontent.com/43657951/77667161-237c4600-6f82-11ea-81ea-fcb30cfe7921.png">
+
+<img width="300" alt="Schermafbeelding 2020-03-26 om 16 50 53" src="https://user-images.githubusercontent.com/43657951/77667165-25460980-6f82-11ea-864f-deed73d42bcb.png">
+
+
+
 
 </details>
 
@@ -189,6 +182,7 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 
 
 ## 3. Pleasurable (HTML + CSS + JS)
+
 ### Features
 * The user can see directly the input result on the same page.
 * Print the design with the print-button
@@ -199,26 +193,17 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 
 </details>
 
-<details>
-   <summary>Research</summary>
-   
-1. [Developer.mozilla, Form Change](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
-
-2. [Developer.mozilla, String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
-
-3. [Can I use, InnerHTML/textContent ](https://caniuse.com/#search=insertAdjacentHTML)
-
-<img width="500" alt="Schermafbeelding 2020-03-31 om 09 57 54" src="https://user-images.githubusercontent.com/43657951/78024891-67dc5d00-7359-11ea-8cb0-d3f45af08df4.png">
-<img width="500" alt="Schermafbeelding 2020-03-31 om 09 58 17" src="https://user-images.githubusercontent.com/43657951/78024899-6ad74d80-7359-11ea-92e6-89f80bf3ec04.png">
-
-
-</details>
 
 <details>
 
    <summary>Code details</summary>
 
-1. XHR Fallback
+1. See directly the result
+
+XMLHttpRequest is a JS object that retrieves data from a URL/other HTML-page without having to do a full page refresh. On this way I can show the result directly next to the form. There is a fallback if the browser don't support XMLHttpRequest.
+
+Source: [Developer.mozilla, XML Http requst](https://developer.mozilla.org/nl/docs/Web/API/XMLHttpRequest)
+
  ```
  function setupXHR() {
   if (!window.XMLHttpRequest) {
@@ -235,6 +220,40 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
   }
 }
  ```
+
+2. Changes in form
+
+When the user changes something in the form,  a function is called.
+
+Source: [Developer.mozilla, Form Change](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+
+```
+fieldset[0].addEventListener("change", function() {
+      // Change SVG color
+      const currentSVGColor = document.querySelector("#SVGcolor");
+      currentSVGColor.removeAttribute("fill");
+      currentSVGColor.setAttribute("fill", event.target.value);
+```
+
+Replace an value for a new one
+
+Source: [Developer.mozilla, String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+
+```
+const currentTextColorSelector = document.querySelector("#textColor");
+let currentTextColor = currentTextColorSelector.textContent;
+let newcurrentTextColor = currentTextColor.replace(currentTextColor, event.target.value);
+currentTextColorSelector.textContent = "Color: " + newcurrentTextColor;
+```
+
+4. InnerHTML/textContent
+
+I'll use textContent because it is supported by more browsers.
+
+Source: [Can I use, InnerHTML/textContent ](https://caniuse.com/#search=insertAdjacentHTML)
+<img width="500" alt="Schermafbeelding 2020-03-31 om 09 57 54" src="https://user-images.githubusercontent.com/43657951/78024891-67dc5d00-7359-11ea-8cb0-d3f45af08df4.png">
+<img width="500" alt="Schermafbeelding 2020-03-31 om 09 58 17" src="https://user-images.githubusercontent.com/43657951/78024899-6ad74d80-7359-11ea-92e6-89f80bf3ec04.png">
+
 
 </details>
 
@@ -255,7 +274,6 @@ The website is tested on several browsers/ devices. I used [Browserstack](https:
 
 5. Motorola Moto G 2nd Gen, Android, v5. Browser: UC
 * No Problems
-<img width="300" alt="Schermafbeelding 2020-03-31 om 13 42 16" src="https://user-images.githubusercontent.com/43657951/78023517-103cf200-7357-11ea-9444-b0d63be47cc1.png">
 
 6. Nokia Lumia 930 8.1
 * The "Finish button" in the form is not removed. 
@@ -263,11 +281,10 @@ The website is tested on several browsers/ devices. I used [Browserstack](https:
 
 7. Windows 10, Microsoft Edge 15
 * No Problems
-<img width="300" alt="Schermafbeelding 2020-03-31 om 13 49 33" src="https://user-images.githubusercontent.com/43657951/78023465-ff8c7c00-7356-11ea-83b9-e09011f46de0.png">
 
 ## Sources
-* [developer.mozilla, color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
-* [developer.mozilla, change event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+* [Developer.mozilla, Color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+* [Developer.mozilla, Change event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
 * [Developer.mozilla, String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 * [Developer.mozilla, XML Http requst](https://developer.mozilla.org/nl/docs/Web/API/XMLHttpRequest)
 * [Can I use](https://caniuse.com)
