@@ -111,7 +111,8 @@ function deleteSubmitButton() {
 
 function changeFormMethod() {
   const form = document.querySelector("form");
-  console.log(form.getAttribute("method"))
+  form.removeAttribute("method")
+  form.setAttribute("method", "GET")
 }
 
 

@@ -49,25 +49,37 @@ node server.js
 
 
 ## Progressive enhancement
+Progressive enhancement is a strategy that first emphasizes the important content of the website. The HTML document contains this important content. This strategy then gradually adds more features and functions on top of the content with CSS and JS. The benefits of this strategy are that it gives everyone access to the basic content and functionality of a web page, while also providing an improved version of the page to those with more advanced browser software.
 
-I start with thinking about the main functionality: choose what your tshirt will look like. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
+An example from the Nerdy Tshirt site: with HTML you can choose your design options and see the result on a new page. With CSS I give the design options and the result a styling. For example, if the user clicks on a color option, the button becomes thicker. If the browser supports JS, the user can see his design options directly on the same page.
+
+### Code funtionality
+I start with thinking about the core functionality: the user design a tshirt. He/She can choose how the T-shirt will look like. This has to be accessible with only HTML. Step by step I'll enrich the user experience with CSS and JS.
+
+### Feature detection
+With feature detection you can check if a browser supports a certain block of code. If it doesn't support the code, you can use "fallbacks". A fallback let the browser run different code, so that the browser can always provide a working experience rather than crashing/erroring in some browsers.
+
 
 ## 1. Functional / Reliable (HTML)
+### Features
 * The user can design a T-shirt
   * The user can choose a color
   * The user can choose text
   * The user can choose a image
 * The user can see the result on a new page
 
+<details>
+  <summary> ### Research</summary>
+</details>
 
 <details>
-  <summary>Code details</summary>
+  <summary> ### Code details</summary>
  
-### 1. Form
+1. Form
 
 index.ejs gives a form where the user can choose a color, image and fill in a text.
 
-### 2. Submit - server side
+2. Submit - server side
 
 When the user clicks on the submit button from the form, de values will be passed to the URL. This is done server side so that it also works when JS is not present.
 
@@ -77,7 +89,7 @@ app.post('/', (req, res) => {
 })
 ```
 
-### 3. URL parameters
+3. URL parameters
 The values from the URL are retrieved and passed to design.ejs.
 ```
 app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
@@ -88,7 +100,7 @@ app.get('/design/:shirtColor/:text/:shirtImage', (req, res) => {
 })
 ```
 
-### 4. SVG 
+4. SVG 
 In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure that the color, image and text are adjusted to the input of the user. In this way, the user can also see his designed t-shirt without CSS and JS.
 
 ***Inline CSS:** This is inline CSS which is not very neat but for enhancement no problem. The only problem you can get, is that the HTML inline-CSS overlaps the CSS-file. Keep this in mind.
@@ -112,14 +124,29 @@ In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure tha
 <img width="500" alt="Schermafbeelding 2020-03-19 om 21 16 53" src="https://user-images.githubusercontent.com/43657951/77654298-2fabd780-6f71-11ea-9fae-747b1b9a8334.png">
 
 ## 2. Usable (HTML + CSS)
+### Features
 * Styled website
 * The form is styled
   * Radio buttons are colors/images
 
 <details>
-   <summary>Code details</summary>
+   <summary>### Research</summary>
+
+1. Colorblindness
+
+To help people who can't see colors, I left the name of the color inside the button.
+
+<img width="300" alt="Schermafbeelding 2020-03-26 om 16 50 32" src="https://user-images.githubusercontent.com/43657951/77667161-237c4600-6f82-11ea-81ea-fcb30cfe7921.png">
+
+<img width="300" alt="Schermafbeelding 2020-03-26 om 16 50 53" src="https://user-images.githubusercontent.com/43657951/77667165-25460980-6f82-11ea-864f-deed73d42bcb.png">
+
+</details>
+
+<details>
+
+   <summary>### Code details</summary>
  
-### 1. Form labels
+1. Form labels
 
 Style the labels
 
@@ -130,14 +157,6 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 <span>Green</span>  
 </label>
 ```
-
-### 1.2.Colorblindness
-
-To help people who can't see colors, I left the name of the color inside the button.
-
-<img width="300" alt="Schermafbeelding 2020-03-26 om 16 50 32" src="https://user-images.githubusercontent.com/43657951/77667161-237c4600-6f82-11ea-81ea-fcb30cfe7921.png">
-
-<img width="300" alt="Schermafbeelding 2020-03-26 om 16 50 53" src="https://user-images.githubusercontent.com/43657951/77667165-25460980-6f82-11ea-864f-deed73d42bcb.png">
 
 
 </details>
@@ -151,9 +170,24 @@ To help people who can't see colors, I left the name of the color inside the but
 
 
 ## 3. Pleasurable (HTML + CSS + JS)
+### Features
 * The user can see directly the input result on the same page.
 * T-shirt in 3D
 * Print the design with the print-button
+
+
+<details>
+   <summary>### Research</summary>
+
+
+</details>
+
+<details>
+
+   <summary>### Code details</summary>
+ 
+
+</details>
 
 <img width="250" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78016145-b3d3d580-734a-11ea-8c7c-488cb8687223.jpg">
 
