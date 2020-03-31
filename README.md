@@ -69,11 +69,11 @@ With feature detection you can check if a browser supports a certain block of co
 * The user can see the result on a new page
 
 <details>
-  <summary> ### Research</summary>
+  <summary>Research</summary>
 </details>
 
 <details>
-  <summary> ### Code details</summary>
+  <summary>Code details</summary>
  
 1. Form
 
@@ -130,7 +130,7 @@ In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure tha
   * Radio buttons are colors/images
 
 <details>
-   <summary>### Research</summary>
+   <summary>Research</summary>
 
 1. Colorblindness
 
@@ -144,7 +144,7 @@ To help people who can't see colors, I left the name of the color inside the but
 
 <details>
 
-   <summary>### Code details</summary>
+   <summary>Code details</summary>
  
 1. Form labels
 
@@ -177,14 +177,14 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 
 
 <details>
-   <summary>### Research</summary>
+   <summary>Research</summary>
 
 
 </details>
 
 <details>
 
-   <summary>### Code details</summary>
+   <summary>Code details</summary>
  
 
 </details>
