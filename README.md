@@ -15,8 +15,9 @@ Nerdy T-shirts is part of the course [cmda minor web - browser technologies](htt
   * [Functional / Reliable (HTML)]()
   * [Usable (HTML + CSS)]()  
   * [Pleasurable (HTML + CSS + JS)]()   
-* [Wishlist](#Wishlist)
+* [Test](#Test)
 * [Sources](#Sources)
+* [Conclusion](#Conclusion)
 * [License](#License)
 
 
@@ -311,7 +312,7 @@ The website is tested on several browsers/ devices. I used [Browserstack](https:
 * [Can I use](https://caniuse.com)
 * [Browserstack](https://www.browserstack.com/)
 
-## Conclusie
+## Conclusion
 * I learned that a website should be accessible to all users on all devices.
 * I learned what progressive enhancement is and how you can apply it when creating a website.
 * The core functionality is usable in the HTML and CSS and JS provide extra features.
