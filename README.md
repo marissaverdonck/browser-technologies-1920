@@ -67,9 +67,27 @@ With feature detection you can check if a browser supports a certain block of co
   * The user can choose text
   * The user can choose a image
 * The user can see the result on a new page
+<details>
+  <summary>Wireflow</summary>
+<img width="400" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78015049-175d0380-7349-11ea-8e0c-adead8022836.jpg">
 
+</details>
 <details>
   <summary>Research</summary>
+
+1. [developer.mozilla, color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+Recommendation developer mozilla: Adds the orange keyword and system colors.
+```
+ <label for="powderblue"> 
+        <input type="radio" id="powderblue" name="shirtColor" value="powderblue" />
+    <span> Blue</span>
+   </label>
+```
+
+2. [Developer.mozilla, XML Http requst](https://developer.mozilla.org/nl/docs/Web/API/XMLHttpRequest)
+XMLHttpRequest is a JS object that retrieves data from a URL/other HTML-page without having to do a full page refresh.
+
+
 </details>
 
 <details>
@@ -117,7 +135,6 @@ In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure tha
 ```
 </details>
 
-<img width="400" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78015049-175d0380-7349-11ea-8e0c-adead8022836.jpg">
 
 <img width="500" alt="Schermafbeelding 2020-03-20 om 12 21 03" src="https://user-images.githubusercontent.com/43657951/77654288-2c185080-6f71-11ea-8c37-386ba4134596.png">
 
@@ -128,6 +145,10 @@ In design.ejs a t-shirt SVG is shown. With the template engine: EJS I ensure tha
 * Styled website
 * The form is styled
   * Radio buttons are colors/images
+<details>
+  <summary>Wireflow</summary>
+<img width="400" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78015053-1926c700-7349-11ea-8fb1-41343a69840a.jpg">
+</details>
 
 <details>
    <summary>Research</summary>
@@ -161,8 +182,6 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 
 </details>
 
-<img width="400" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78015053-1926c700-7349-11ea-8fb1-41343a69840a.jpg">
-
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77767508-79fc8980-7041-11ea-82d3-81caf5271483.png">
 
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/77767779-d65fa900-7041-11ea-98df-565e24c83254.png">
@@ -172,12 +191,25 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 ## 3. Pleasurable (HTML + CSS + JS)
 ### Features
 * The user can see directly the input result on the same page.
-* T-shirt in 3D
 * Print the design with the print-button
+<details>
+  <summary>Wireflow</summary>
 
+<img width="250" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78016145-b3d3d580-734a-11ea-8c7c-488cb8687223.jpg">
+
+</details>
 
 <details>
    <summary>Research</summary>
+   
+1. [Developer.mozilla, Form Change](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+
+2. [Developer.mozilla, String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+
+3. [Can I use, InnerHTML/textContent ](https://caniuse.com/#search=insertAdjacentHTML)
+
+<img width="500" alt="Schermafbeelding 2020-03-31 om 09 57 54" src="https://user-images.githubusercontent.com/43657951/78024891-67dc5d00-7359-11ea-8cb0-d3f45af08df4.png">
+<img width="500" alt="Schermafbeelding 2020-03-31 om 09 58 17" src="https://user-images.githubusercontent.com/43657951/78024899-6ad74d80-7359-11ea-92e6-89f80bf3ec04.png">
 
 
 </details>
@@ -185,18 +217,61 @@ Koop wrote me an issue to nest the input in a label for better [accessibility](h
 <details>
 
    <summary>Code details</summary>
- 
+
+1. XHR Fallback
+ ```
+ function setupXHR() {
+  if (!window.XMLHttpRequest) {
+    console.log("XML wordt niet ondersteund")
+  } else {
+    console.log("XML wordt ondersteund")
+    const request = new XMLHttpRequest();
+    request.onload = function() {
+      const shirtImage = request.response.querySelector("#result")
+    }
+    request.open('GET', pages[1]);
+    request.responseType = 'document';
+    request.send();
+  }
+}
+ ```
 
 </details>
 
-<img width="250" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78016145-b3d3d580-734a-11ea-8c7c-488cb8687223.jpg">
-
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78012418-36f22d00-7345-11ea-81bf-e5a02294647a.png">
 
+## Test
+The website is tested on several browsers/ devices. I used [Browserstack](https://www.browserstack.com/)for testing different devices and I've installed Chrome, Safari and Firefox on my Macbook Pro. The only problem I found was that .remove() did not work on all the browsers.
 
+1. Chrome
+* No Problems
 
-## Wishlist
+2. Safari
+* The "Finish button" in the form is not removed. 
+<img width="300" alt="Schermafbeelding 2020-03-31 om 13 55 25" src="https://user-images.githubusercontent.com/43657951/78023700-690c8a80-7357-11ea-9e99-0f9d69515915.png">
+
+3. Firefox
+* No Problems
+
+5. Motorola Moto G 2nd Gen, Android, v5. Browser: UC
+* No Problems
+<img width="300" alt="Schermafbeelding 2020-03-31 om 13 42 16" src="https://user-images.githubusercontent.com/43657951/78023517-103cf200-7357-11ea-9444-b0d63be47cc1.png">
+
+6. Nokia Lumia 930 8.1
+* The "Finish button" in the form is not removed. 
+<img width="300" alt="Schermafbeelding 2020-03-31 om 13 45 23" src="https://user-images.githubusercontent.com/43657951/78023504-0ca96b00-7357-11ea-9c55-4620512fd362.png">
+
+7. Windows 10, Microsoft Edge 15
+* No Problems
+<img width="300" alt="Schermafbeelding 2020-03-31 om 13 49 33" src="https://user-images.githubusercontent.com/43657951/78023465-ff8c7c00-7356-11ea-83b9-e09011f46de0.png">
 
 ## Sources
+* [developer.mozilla, color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+* [developer.mozilla, change event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+* [Developer.mozilla, String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+* [Developer.mozilla, XML Http requst](https://developer.mozilla.org/nl/docs/Web/API/XMLHttpRequest)
+* [Can I use](https://caniuse.com)
+* [Browserstack](https://www.browserstack.com/)
 
 ## License
+MIT License
