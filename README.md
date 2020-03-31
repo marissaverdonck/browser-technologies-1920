@@ -286,8 +286,7 @@ The website is tested on several browsers/ devices. I used [Browserstack](https:
 * No Problems
 
 ### 2. Safari
-* The "Finish button" in the form is not removed. 
-<img width="300" alt="Schermafbeelding 2020-03-31 om 13 55 25" src="https://user-images.githubusercontent.com/43657951/78023700-690c8a80-7357-11ea-9e99-0f9d69515915.png">
+* No Problems
 
 ### 3. Firefox
 * No Problems
@@ -296,11 +295,13 @@ The website is tested on several browsers/ devices. I used [Browserstack](https:
 * No Problems
 
 ### 6. Nokia Lumia 930 8.1
-* The "Finish button" in the form is not removed. 
-<img width="300" alt="Schermafbeelding 2020-03-31 om 13 45 23" src="https://user-images.githubusercontent.com/43657951/78023504-0ca96b00-7357-11ea-9c55-4620512fd362.png">
+* There is no basic style and the submit button is still there. Fortunately, when the user changes the form, the shirt changes. So it is not a big issue. But something to look at when I have more time.
+
+<img width="373" alt="Schermafbeelding 2020-03-31 om 15 25 22" src="https://user-images.githubusercontent.com/43657951/78031888-74b27e00-7364-11ea-9558-d0923093054d.png">
 
 ### 7. Windows 10, Microsoft Edge 15
 * No Problems
+
 
 ## Sources
 * [Developer.mozilla, Color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
@@ -311,7 +312,11 @@ The website is tested on several browsers/ devices. I used [Browserstack](https:
 * [Browserstack](https://www.browserstack.com/)
 
 ## Conclusie
-
+* I learned that a website should be accessible to all users on all devices.
+* I learned what progressive enhancement is and how you can apply it when creating a website.
+* The core functionality is usable in the HTML and CSS and JS provide extra features.
+* I learned that you should check your codes for feature detection and use fallbacks when a feature is not supported.
+* I learned how to test a website.
 
 ## License
 MIT License
