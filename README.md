@@ -281,7 +281,7 @@ function deleteSubmitButton() {
 <img width="500" alt="Schermafbeelding 2020-03-12 om 14 12 11" src="https://user-images.githubusercontent.com/43657951/78012418-36f22d00-7345-11ea-81bf-e5a02294647a.png">
 
 ## Testing
-The website is tested on several browsers/ devices. I used [Browserstack](https://www.browserstack.com/)for testing different devices and I've installed Chrome, Safari and Firefox on my Macbook Pro. The only problem I found was that .remove() did not work on all the browsers.
+The website is tested on several browsers/ devices. I used [Browserstack](https://www.browserstack.com/)for testing different devices and I've installed Chrome, Safari and Firefox on my Macbook Pro.
 
 ### 1. Browser test: Chrome
 * No Problems
