@@ -303,17 +303,17 @@ The website is tested on several browsers/ devices. I used [Browserstack](https:
 ### 7. Device test: Windows 10, Microsoft Edge 15
 * No Problems
 
-### 8 Accessibility test: Color blindness
+### 8. Accessibility test: Color blindness
 Because there is text in the color buttons, Color blindness should not be a problem.
 <img width="500" alt="Schermafbeelding 2020-03-31 om 23 07 32" src="https://user-images.githubusercontent.com/43657951/78075223-6d12c980-73a4-11ea-80d6-d2dd8a243cb9.png">
 
 
-### 9 Accessibility test: Turn off Images
+### 9. Accessibility test: Turn off Images
 The form images have an alt text in the form. But this is not yet in the svg result. This can be a problem so I have to add an alt-text here.
 
 <img width="500" alt="Schermafbeelding 2020-03-31 om 23 10 32" src="https://user-images.githubusercontent.com/43657951/78075457-dabef580-73a4-11ea-9f49-edd17d0381a3.png">
 
-### 10 Accessibility test: 3. No mouse
+### 10. Accessibility test: 3. No mouse
 It is possible to move over all the form inputs and the print button. Except the link in the header. This link navigates to the same page so I think this is the reason because the link in the header of the design page still works.
 
 <img width="500" alt="Schermafbeelding 2020-03-31 om 23 20 45" src="https://user-images.githubusercontent.com/43657951/78076207-46559280-73a6-11ea-923b-4d78bc16f4f7.png">
@@ -328,11 +328,11 @@ It is possible to move over all the form inputs and the print button. Except the
 
 ## Conclusion
 [See here the comprehensive conclusion](https://github.com/marissaverdonck/browser-technologies-1920/wiki/Conclusie)
-* I learned that a website should be accessible to all users on all devices.
-* I learned what progressive enhancement is and how you can apply it when creating a website.
+* I've learned that a website should be accessible to all users on all devices.
+* I've learned what progressive enhancement is and how you can apply it when creating a website.
 * The core functionality is usable in the HTML and CSS and JS provide extra features.
-* I learned that you should check your codes for feature detection and use fallbacks when a feature is not supported.
-* I learned how to test a website.
+* I've learned that you should check your codes for feature detection and use fallbacks when a feature is not supported.
+* I've learned how to test a website.
 
 ## License
 MIT License
