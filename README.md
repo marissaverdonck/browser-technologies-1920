@@ -9,6 +9,9 @@ The Browser Technologies course will learn you how to make good, robust, accessi
 ## Introduction
 Nerdy T-shirts is part of the course [cmda minor web - browser technologies](https://github.com/cmda-minor-web/browser-technologies-1920). You can design your own T-shirt with color, text and images. The idea is that the website is accessible to all users with all kind of browsers. 
 
+## Live demo
+https://calm-reef-96534.herokuapp.com/
+
 ## Table of Contents
 * [Installation](#Installation)
 * [Progressive enhancement](#Progressive-enhancement)
